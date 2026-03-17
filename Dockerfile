@@ -5,6 +5,7 @@ FROM node:22-bookworm AS openclaw-build
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     git \
+    vim \
     ca-certificates \
     curl \
     python3 \
